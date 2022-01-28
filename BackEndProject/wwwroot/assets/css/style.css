@@ -243,9 +243,35 @@
 }
 #team .mycard .imagePerson{
     height: 50px;
+    position: relative;
 }
 #team .mycard img{
     position:relative;
+}
+#team .socialMediaTeam{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: .3s;
+}
+#team .myCard:hover .socialMediaTeam{
+    opacity: 1;
+}
+#team .socialMediaTeam .iconTeam{
+    color: white;
+    font-size: 15px;
+    margin: 0 8px;
+    padding: 10px;
+    background-color: #106eeaaf;
+    border-radius: 5px;
+}
+.socialMediaTeam ul{
+    list-style: none;
+    padding: 0;
 }
 /* Team End */
 

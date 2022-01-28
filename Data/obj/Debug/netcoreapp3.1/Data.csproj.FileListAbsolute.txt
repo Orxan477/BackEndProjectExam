@@ -11,3 +11,6 @@ C:\Users\tu201906147\source\repos\BackEndProject\Data\obj\Debug\netcoreapp3.1\Da
 C:\Users\tu201906147\source\repos\BackEndProject\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
 C:\Users\tu201906147\source\repos\BackEndProject\Data\obj\Debug\netcoreapp3.1\Data.dll
 C:\Users\tu201906147\source\repos\BackEndProject\Data\obj\Debug\netcoreapp3.1\Data.pdb
+C:\Users\tu201906147\source\repos\BackEndProject\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.json
+C:\Users\tu201906147\source\repos\BackEndProject\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.dev.json
+C:\Users\tu201906147\source\repos\BackEndProject\Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache

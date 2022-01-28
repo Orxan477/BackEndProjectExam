@@ -1,7 +1,4 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
-}
+﻿@model IEnumerable<Team>
 
 <main>
     <section id="Intro">
@@ -142,54 +139,29 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-                    <div class="card myCard">
-                        <div class="imagePerson card-img-top">
-                            <img src="/assets/img/team-1.jpg" class="card-img-top" alt="...">
-                        </div>
+                @foreach (var person in Model)
+                {
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                        <div class="card myCard">
+                            <div class="imagePerson card-img-top">
+                                <img src="/assets/img/@person.Image" class="card-img-top" alt="...">
+                                <div class="socialMediaTeam">
+                                    <ul class="d-flex justify-content-center">
+                                        <li><i class="fab fa-twitter iconTeam"></i></li>
+                                        <li><i class="fab fa-facebook iconTeam"></i></li>
+                                        <li><i class="fab fa-instagram iconTeam"></i></li>
+                                        <li><i class="fab fa-linkedin iconTeam"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                        <div class="card-body myCardBody">
-                            <h5 class="card-title">Walter White</h5>
-                            <p class="card-text">Chief Executive Officer</p>
+                            <div class="card-body myCardBody">
+                                <h5 class="card-title">@person.Name</h5>
+                                <p class="card-text">@person.Position</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-                    <div class="card myCard">
-                        <div class="imagePerson card-img-top">
-                            <img src="/assets/img/team-2.jpg" class="card-img-top" alt="...">
-                        </div>
-
-                        <div class="card-body myCardBody">
-                            <h5 class="card-title">Sarah Jhonson</h5>
-                            <p class="card-text">Product Manager</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-                    <div class="card myCard">
-                        <div class="imagePerson card-img-top">
-                            <img src="/assets/img/team-3.jpg" class="card-img-top" alt="...">
-                        </div>
-
-                        <div class="card-body myCardBody">
-                            <h5 class="card-title">William Anderson</h5>
-                            <p class="card-text">CTO</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-                    <div class="card myCard">
-                        <div class="imagePerson card-img-top">
-                            <img src="/assets/img/team-4.jpg" class="card-img-top" alt="...">
-                        </div>
-
-                        <div class="card-body myCardBody">
-                            <h5 class="card-title">Amanda Jepson</h5>
-                            <p class="card-text">Accountant</p>
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
         </div>
     </section>
@@ -281,4 +253,3 @@
         </div>
     </section>
 </main>
-

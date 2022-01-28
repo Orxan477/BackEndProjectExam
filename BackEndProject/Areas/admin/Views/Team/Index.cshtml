@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Team>
+@{
+    ViewData["Title"] = "Index";
+    int num = 1;
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Team</h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Position</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@num</td>
+                                <td><img src="~/assets/img/@item.Image" /></td>
+                                <td>@item.Name</td>
+                                <td>@item.Position</td>
+                                <td>
+                                    <a asp-action="Update" class="btn btn-warning" asp-route-id="@item.Id">Update</a>
+                                    <form class="d-inline" asp-action="Delete" asp-route-id="@item.Id" method="post">
+
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            num++;
+                        }
+                    </tbody>
+                    <a asp-area="Admin" asp-controller="Team" asp-action="Create" class="btn btn-success">Create</a>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

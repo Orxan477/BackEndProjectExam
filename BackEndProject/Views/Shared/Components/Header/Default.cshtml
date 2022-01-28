@@ -58,19 +58,38 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#team">Team</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                               data-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Dropdown 1</a>
-                                <a class="dropdown-item" href="#">Deep Drop Down</a>
-                                <a class="dropdown-item" href="#">Dropdown 2</a>
-                                <a class="dropdown-item" href="#">Dropdown 3</a>
-                                <a class="dropdown-item" href="#">Dropdown 4</a>
-                            </div>
-                        </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-toggle="dropdown" aria-expanded="false">
+                                    @User.Identity.Name
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Account" asp-action="Logout">Logout</a>
+                                    <a class="dropdown-item" href="#">Deep Drop Down</a>
+                                    <a class="dropdown-item" href="#">Dropdown 2</a>
+                                    <a class="dropdown-item" href="#">Dropdown 3</a>
+                                    <a class="dropdown-item" href="#">Dropdown 4</a>
+                                </div>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-toggle="dropdown" aria-expanded="false">
+                                    Account
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Account" asp-action="Login">Login</a>
+                                    <a class="dropdown-item" href="#">Deep Drop Down</a>
+                                    <a class="dropdown-item" href="#">Dropdown 2</a>
+                                    <a class="dropdown-item" href="#">Dropdown 3</a>
+                                    <a class="dropdown-item" href="#">Dropdown 4</a>
+                                </div>
+                            </li>
+                        }
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
