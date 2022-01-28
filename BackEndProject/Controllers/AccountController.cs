@@ -38,6 +38,7 @@ namespace BackEndProject.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterVM register)
         {
+            IsAuthenticated();
             if (!ModelState.IsValid) return View(register);
             AppUser user = new AppUser
             {
@@ -91,6 +92,7 @@ namespace BackEndProject.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginVm login)
         {
+            IsAuthenticated();
             if (!ModelState.IsValid) return View(login);
             var user = await _userManager.FindByEmailAsync(login.Email);
             if (user is null) return NotFound();
@@ -127,6 +129,13 @@ namespace BackEndProject.Controllers
         {
             _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
+        }
+        private void IsAuthenticated()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                throw new System.Exception("You Alredy Authenticated");
+            }
         }
     }
 }
