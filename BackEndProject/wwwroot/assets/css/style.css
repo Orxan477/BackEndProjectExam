@@ -1,0 +1,370 @@
+/* nav1 start */
+
+#nav1 {
+    height: 40px;
+}
+#nav1 .navbar{
+    height: 40px;
+}
+#nav1 .nav1RightMargin{
+    margin-left: 56%;
+}
+#nav1 .nav1LeftItem{
+    font-size: 15px;
+    color: white;
+}
+#nav1 .logoNav1{
+    color: white;
+    transition: .2s;
+}
+#nav1 .logoNav1:hover{
+    color: rgb(219, 216, 216);
+}
+/* nav1 End */
+
+/* nav2 start */
+#nav2{
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
+#nav2 .nav2RightMargin{
+    margin-left: 38%;
+}
+#nav2 .nav2RightMargin a{
+    font-weight: 500;
+    color: black;
+}
+#nav2 .nav2Left{
+    color: black;
+    font-size: 27px;
+    font-weight: 600;
+}
+#nav2 .nav2Left span{
+    color: #106eea;
+}
+#nav2 .nav2LeftBurger{
+    font-weight: 500;
+}
+/* nav2 end */
+
+/* Intro start */
+#Intro{
+    position: relative;
+    background-image: url("/assets/img/hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    /* opacity: 0.5; */
+}
+#Intro::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    opacity: .5;
+}
+#Intro .ContentIntro{
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform:translateY(-50%);
+}
+#Intro .ContentIntro h3{
+    font-size: 40px;
+    font-weight: 800;
+}
+#Intro .ContentIntro h3 span{
+    color:#106eea;
+}
+#Intro .ContentIntro p{
+    font-size: 25px;
+    font-weight: 400;
+}
+#Intro .ContentIntro button{
+    padding:10px 22px;
+    background-color: #106eea;
+    border: none;
+}
+#Intro .ContentIntro button:hover{
+    background-color: #1467d3;
+    border: none;
+}
+#Intro .ContentIntro .videoSpan{
+    margin-left: 20px;
+    font-size: 23px;
+    font-weight: 400;
+}
+#Intro .ContentIntro .videoSpan:hover .text{
+    color: #106eea;
+}
+#Intro .text{
+    margin-left: 5px;
+    color: black;
+    transition: .3s;
+}
+#Intro .videoIcon{
+    color: #106eea;
+}
+/* Intro End */
+
+/* service start */
+
+#Services .servicesTitle{
+    padding: 5px;
+    background-color: rgb(231, 238, 224);
+    border-radius: 50px;
+    text-align: center;
+}
+#Services .servicesTitle h5{
+   display: inline;
+   font-size: 15px;
+   margin: 0;
+   color: #106eea;
+   font-weight: 700;
+}
+#Services .servicesHead{
+    margin-top: 10px;
+    text-align: center;
+ }
+#Services .servicesHead h2{
+    display: inline;
+    font-size: 35px;
+    margin: 0;
+    /* color: #106eea; */
+    font-weight: 700;
+ }
+ #Services .servicesHead h2 span{
+    color: #106eea;
+ }
+ #Services .servicesContent{
+    text-align: center;
+    margin-top: 10px;
+}
+#Services .servicesContent p{
+   font-size: 17px;
+   font-weight: 500;
+   color: rgb(70, 70, 70);
+}
+#Services .myBodyCard{
+    text-align: center;
+    padding: 65px 10px;
+}
+#Services .iconService{
+    color: #0f67db;
+    font-size:22px;
+    padding: 18px;
+    border-radius: 5px;
+    background-color: rgb(231, 238, 224);
+    margin-bottom: 15px;
+    border: 1px solid rgb(231, 238, 224);
+    transition: .3s;
+}
+#Services .myBodyCard h5{
+    font-size: 22px;
+    font-weight: 700;
+    transition: .3s;
+    cursor: pointer;
+}
+#Services .myBodyCard p{
+    color: rgb(70, 70, 70);
+}
+#Services .myCard:hover .iconService{
+    border: 1px solid #106eea;
+}
+#Services .myCard:hover h5{
+    color:#106eea;
+}
+#Services .myCard {
+    transition: .3s;
+}
+#Services .myCard:hover {
+    box-shadow: 0 0 12px 0 silver;
+}
+
+/* Team start */
+#team .teamTitle{
+    padding: 5px;
+    background-color: rgb(231, 238, 224);
+    border-radius: 50px;
+    text-align: center;
+}
+#team .teamTitle h5{
+   display: inline;
+   font-size: 15px;
+   margin: 0;
+   color: #106eea;
+   font-weight: 700;
+}
+#team .teamHead{
+    margin-top: 10px;
+    text-align: center;
+ }
+#team .teamHead h2{
+    display: inline;
+    font-size: 35px;
+    margin: 0;
+    /* color: #106eea; */
+    font-weight: 700;
+ }
+ #team .teamHead h2 span{
+    color: #106eea;
+ }
+ #team .teamContent{
+    text-align: center;
+    margin-top: 10px;
+}
+#team .steamContent p{
+   font-size: 17px;
+   font-weight: 500;
+   color: rgb(70, 70, 70);
+}
+#teaam .myCard{
+    box-shadow: 0 0 15px 0 silver;
+}
+#team .myCardBody h5{
+    font-size: 17px;
+}
+#team .myCardBody p{
+    font-size: 14px;
+    color: rgb(175, 172, 172);
+}
+#team .mycard ul{
+    position:absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#team .mycard .imagePerson{
+    height: 50px;
+}
+#team .mycard img{
+    position:relative;
+}
+/* Team End */
+
+/* Contact start */
+#contact .contactTitle{
+    padding: 5px;
+    background-color: rgb(231, 238, 224);
+    border-radius: 50px;
+    text-align: center;
+}
+#contact .contactTitle h5{
+   display: inline;
+   font-size: 15px;
+   margin: 0;
+   color: #106eea;
+   font-weight: 700;
+}
+#contact .contactHead{
+    margin-top: 10px;
+    text-align: center;
+ }
+#contact .contactHead h2{
+    display: inline;
+    font-size: 35px;
+    margin: 0;
+    /* color: #106eea; */
+    font-weight: 700;
+ }
+ #contact .contactHead h2 span{
+    color: #106eea;
+ }
+ #contact .contactContent{
+    text-align: center;
+    margin-top: 10px;
+}
+#contact .contactContent p{
+   font-size: 17px;
+   font-weight: 500;
+   color: rgb(70, 70, 70);
+}
+#contact .myCardBody{
+    text-align: center;
+}
+#contact .myCardBody .logoContact{
+    color: #1467d3;
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid #3183f0;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#contact .myCardBody h5{
+    color: rgb(138, 132, 132);
+    font-size: 18px;
+}
+#contact .myCardBody p{
+    color: rgb(138, 132, 132);
+    font-size: 15px;
+}
+.buttonSend{
+    text-align: center;
+}
+/* Contact End */
+
+/* Footer1 Start */
+.footer1Content{
+    text-align: center;
+}
+.footer1Content h4{
+    font-weight: 700;
+}
+#footer2 ul{
+    list-style: none;
+    padding: 0;
+}
+#footer2 .bottom{
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 700;
+}
+#footer2 .bottom span {
+    color: #1467d3;
+}
+#footer2 .top{
+    margin-top: 15px;
+}
+#footer2 .hover .head{
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+#footer2 .hover li {
+    margin: 8px 0;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+#footer2 .hover li:hover {
+    color: #1467d3;
+}
+#footer2 .logoFooterRight{
+    color: #1467d3
+}
+#footer2 .social li{
+    margin: 0 7px;
+}
+.iconSocialFooter{
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    background-color: #1467d3;
+    border-radius: 5px;
+    transition: .3s;
+}
+.iconSocialFooter:hover{
+    background-color: #1f76e9;
+}
+.footer3Margin{
+    margin-left: 41%;
+}
